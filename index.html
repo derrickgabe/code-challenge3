@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <title>Smart Goal Planner</title>
     <script>
-      // GitHub Pages SPA fallback
-      sessionStorage.redirect = location.pathname;
-      window.location.replace('/code-challenge3/');
-    </script>
+     
+        // Set the base URL for the application
+        const base = '/code-challenge3/';
+        document.write('<base href="' + base + '">');
+      </script>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
     <div id="root"></div>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
