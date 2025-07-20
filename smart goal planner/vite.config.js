@@ -4,9 +4,10 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   base: '/code-challenge3/',
+  plugins: [react()],
   build: {
-    outDir: 'dist',
-    emptyOutDir: true,
-  },
-
+    rollupOptions: {
+      input: './index.html'
+    }
+  }
 })
