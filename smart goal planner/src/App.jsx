@@ -7,7 +7,6 @@ import DepositForm from './components/DepositForm.jsx';
 import './App.css';
 
 import { useLocation } from 'react-router-dom'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 // Removed duplicate App component and default export
 function App() {
