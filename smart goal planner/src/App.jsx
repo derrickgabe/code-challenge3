@@ -1,4 +1,4 @@
-// App.js
+
 import React, { useState, useEffect } from 'react';
 import GoalList from './components/GoalList.jsx';
 import AddGoalForm from './components/AddGoalForm.jsx';
