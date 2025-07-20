@@ -1,13 +1,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
 
 export default defineConfig({
-  root: './',  
+  root: resolve(__dirname, './'), // Explicit root path
   publicDir: 'public',
-  plugins: [react()],
-  resolve: {
-    alias: {
-      '@': '/src' 
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html') // Absolute path
+      }
     }
   }
 })
