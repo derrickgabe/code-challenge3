@@ -1,0 +1,49 @@
+{
+  "goals": [
+    {
+      "id": "1",
+      "name": "Travel Fund - Japan",
+      "targetAmount": 5000,
+      "savedAmount": 4200,
+      "category": "Travel",
+      "deadline": "2026-12-31",
+      "createdAt": "2024-01-15"
+    },
+    {
+      "id": "2",
+      "name": "Emergency Fund",
+      "targetAmount": 10000,
+      "savedAmount": 4500,
+      "category": "Savings",
+      "deadline": "2025-12-01",
+      "createdAt": "2024-02-01"
+    },
+    {
+      "id": "3",
+      "name": "New Laptop",
+      "targetAmount": 1500,
+      "savedAmount": 800,
+      "category": "Electronics",
+      "deadline": "2025-10-23",
+      "createdAt": "2024-03-10"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "goalId": "1",
+      "amount": 200,
+      "date": "2024-02-01",
+      "type": "deposit",
+      "description": "Monthly savings deposit"
+    },
+    {
+      "id": "2",
+      "goalId": "1",
+      "amount": 150,
+      "date": "2024-03-01",
+      "type": "deposit",
+      "description": "Monthly savings deposit"
+    }
+  ]
+}
