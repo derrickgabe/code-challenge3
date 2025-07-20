@@ -6,9 +6,25 @@ import Overview from './components/Overview.jsx';
 import DepositForm from './components/DepositForm.jsx';
 import './App.css';
 
-import { useLocation } from 'react-router-dom'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
-// Removed duplicate App component and default export
+function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    
+    if (sessionStorage.redirect) {
+      const redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      navigate(redirect);
+    }
+  }, []);
+
+  // ... rest of your app
+}
+
+
 function App() {
   const [goals, setGoals] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
