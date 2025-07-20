@@ -21,7 +21,7 @@ function App() {
     }
   }, []);
 
-  // ... rest of your app
+  
 }
 
 
