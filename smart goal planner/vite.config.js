@@ -3,13 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   base: '/code-challenge3/',
-  plugins: [react()],
   build: {
-    outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: './index.html'
-      }
-    }
+    outDir: 'dist'
   }
-});
+})

@@ -7,10 +7,10 @@ import DepositForm from './components/DepositForm.jsx';
 import './App.css';
 
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-function App() {
-  const location = useLocation();
+ {
+  const navigate = useNavigate();
 
   useEffect(() => {
     
